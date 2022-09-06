@@ -14,6 +14,10 @@ public class PatientRecordController {
     @Autowired
     PatientRecordRepository patientRecordRepository;
 
+@GetMapping("/")
+public String displayWelcomeMessage(){
+    return "<center><h1>Welcome to Spring boot Security!!!</h1></center>";
+    }
     @GetMapping("/listPatientRecord")
     public List<PatientRecord> getAllPatients() {
         return patientRecordRepository.findAll();

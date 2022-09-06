@@ -36,6 +36,7 @@ const PatientList = () => {
           <th>Name</th>
           <th>Address</th>
           <th>age</th>
+          <th>EDIT/DELETE</th>
         </tr>
       </thead>
       <tbody>
